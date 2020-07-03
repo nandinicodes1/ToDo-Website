@@ -18,7 +18,7 @@ mongoose.connect("mongodb+srv://admin-nandini:nandini123@cluster0-6wifi.mongodb.
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false
-});
+}).catch(err => console.log(err));
 
 const itemsSchema={
   name: String
